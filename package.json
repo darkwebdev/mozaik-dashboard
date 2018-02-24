@@ -3,7 +3,7 @@
   "description": "Mozaïk dashboard",
   "repository": {
     "type": "git",
-    "url": "git://github.com/plouc/mozaik-demo"
+    "url": "git://github.com/darkwebdev/mozaik-dashboard"
   },
   "license": "MIT",
   "engines": {
