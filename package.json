@@ -1,18 +1,14 @@
 {
   "name": "mozaik-dashboard",
-  "description": "Mozaïk demo dashboard",
+  "description": "Mozaïk dashboard",
   "repository": {
     "type": "git",
     "url": "git://github.com/plouc/mozaik-demo"
   },
   "license": "MIT",
-  "author": {
-    "name": "Raphaël Benitte",
-    "url": "https://github.com/plouc"
-  },
   "engines": {
-    "node": "0.12.x",
-    "npm" : ">=3.0.0"
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
   },
   "dependencies": {
     "babel-preset-es2015": "6.6.0",
@@ -22,9 +18,9 @@
     "gulp": "^3.9.0",
     "lodash": "^3.10.0",
     "mozaik": "1.4.4",
-    "mozaik-ext-github": "1.2.2",
     "mozaik-ext-time": "1.1.0",
-    "mozaik-ext-travis": "1.1.0",
+    "mozaik-ext-value": "^0.1.1",
+    "mozaik-ext-weather": "https://github.com/propellerhead/mozaik-ext-weather.git",
     "react": "^0.13.3"
   },
   "scripts": {
