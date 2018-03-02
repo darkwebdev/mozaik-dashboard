@@ -59,7 +59,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Temperature',
-          url: 'http://localhost:8080/sensors/temp',
+          url: 'http://home-api:8080/sensors/temp',
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '°C', /* optional */
@@ -69,7 +69,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Humidity',
-          url: 'http://localhost:8080/sensors/hum',
+          url: 'http://home-api:8080/sensors/hum',
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '%', /* optional */
@@ -79,7 +79,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Plant water level',
-          url: 'http://localhost:8080/sensors/plant',
+          url: 'http://home-api:8080/sensors/plant',
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '%', /* optional */
