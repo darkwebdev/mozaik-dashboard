@@ -59,22 +59,32 @@ var config = {
         {
           type: 'value.value',
           title: 'Temperature',
-          url: 'http://localhost:8000/test.json',
-          pathCurrent: '$.temperature.current', /* optional */
+          url: 'http://localhost:8080/sensors/temp',
+          pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
-          postfix: ' C', /* optional */
+          postfix: '°C', /* optional */
           columns: 1, rows: 1,
           x: 0, y: 1
         },
         {
           type: 'value.value',
           title: 'Humidity',
-          url: 'http://localhost:8000/test.json',
-          pathCurrent: '$.humidity.current', /* optional */
+          url: 'http://localhost:8080/sensors/hum',
+          pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '%', /* optional */
           columns: 1, rows: 1,
           x: 1, y: 1
+        },
+        {
+          type: 'value.value',
+          title: 'Plant water level',
+          url: 'http://localhost:8080/sensors/plant',
+          pathCurrent: '$.value', /* optional */
+          prefix: '', /* optional */
+          postfix: '%', /* optional */
+          columns: 1, rows: 1,
+          x: 2, y: 1
         }
       ]
     }
