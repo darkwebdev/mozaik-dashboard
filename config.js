@@ -1,7 +1,9 @@
 // Load environment variables from .env file if available
 require('dotenv').load();
 
-var config = {
+const apiHost = process.env.API_HOST || 'home-api';
+const apiPort = process.env.API_PORT || '8080';
+const config = {
   env: 'dev',
 
   host: '0.0.0.0',
@@ -59,7 +61,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Temperature',
-          url: 'http://home-api:8080/sensors/temp',
+          url: `http://${apiHost}:${apiPort}/sensors/temp`,
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '°C', /* optional */
@@ -69,7 +71,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Humidity',
-          url: 'http://home-api:8080/sensors/hum',
+          url: `http://${apiHost}:${apiPort}/sensors/hum`,
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '%', /* optional */
@@ -79,7 +81,7 @@ var config = {
         {
           type: 'value.value',
           title: 'Plant water level',
-          url: 'http://home-api:8080/sensors/plant',
+          url: `http://${apiHost}:${apiPort}/sensors/plant`,
           pathCurrent: '$.value', /* optional */
           prefix: '', /* optional */
           postfix: '%', /* optional */
